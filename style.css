@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --beige-color: #faeee7;
+  --dark-brown-color: #33272a;
+  --brown-color: #594a4e;
+  --hot-pink-color: #ff8ba7;
+  --pink-color: #ffc6c7;
+  --mint-color: #c3f0ca;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +18,14 @@
 }
 
 body {
-  background-color: #232946;
+  background-color: var(--dark-brown-color);
 }
 
 button {
   outline: none;
   cursor: pointer;
-  color: #232946;
-  border: 3px solid #121629;
+  color: var(--dark-brown-color);
+  border: 3px solid var(--brown-color);
   font-weight: 500;
   height: 50px;
   width: 50px;
@@ -38,12 +47,12 @@ button:active {
 }
 
 .calculator {
-  background-color: #b8c1ec;
+  background-color: var(--pink-color);
   width: 320px;
   height: 450px;
   border-radius: 15px;
   padding: 25px 30px;
-  border: 3px solid #121629;
+  border: 3px solid var(--brown-color);
 }
 
 .calculator__display {
@@ -55,7 +64,6 @@ button:active {
   text-align: right;
   padding: 0 10px;
   line-height: 50px;
-  border: 3px solid #121629;
 }
 
 .calculator__buttons {
@@ -78,7 +86,7 @@ button:active {
 .clear__and__enter .calculate {
   border-radius: 5px;
   width: 120px;
-  background-color: #eebbc3;
+  background-color: var(--mint-color);
   font-size: 18px;
   letter-spacing: 3px;
   position: relative;
@@ -99,9 +107,9 @@ button:active {
 }
 
 .button__row > button {
-  background-color: #eebbc3;
+  background-color: var(--beige-color);
 }
 
 .button__row > .operator {
-  background-color: #d27082;
+  background-color: var(--hot-pink-color);
 }
